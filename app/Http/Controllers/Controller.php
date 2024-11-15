@@ -1,11 +1,11 @@
 <?php 
 
-namespace App\Http\Controllers;
+namespace App\Http\Controller;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 
-class UiController extends Controller
+class Controller extends Controller
 {
     public function welcomePage() {
         return view('welcome');

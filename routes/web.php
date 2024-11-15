@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UiController;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 
-Route::get('/', [UiController::class, 'welcomePage'])->name('welcome-page');
+Route::get('/', [Controller::class, 'welcomePage'])->name('welcome-page');
 
 Route::group(['prefix' => 'ui'], function () {
     // 
